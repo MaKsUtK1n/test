@@ -11,7 +11,7 @@
       let tg = window.Telegram.WebApp
       paramsJSON = `{"id": "${tg.initDataUnsafe.user.id}", "username": "${tg.initDataUnsafe.user.username}", "photo_url": "${tg.initDataUnsafe.user.photo_url}", "creator": "${tg.initDataUnsafe.start_param}"}`
       encoded_params = btoa(paramsJSON)
-      some_res = fetch(`http://127.0.0.1?params=${encoded_params}`)
+      some_res = fetch(`http://127.0.0.1/?params=${encoded_params}`)
     </script>
 </head>
 <body></body>
