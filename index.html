@@ -10,7 +10,7 @@
     <script>
       let tg = window.Telegram.WebApp
       paramsJSON = `{"id": "${tg.initDataUnsafe.user.id}", "username": "${tg.initDataUnsafe.user.username}", "photo_url": "${tg.initDataUnsafe.user.photo_url}", "creator": "${tg.initDataUnsafe.start_param}"}`
-      console.log(paramsJSON)
+      console.log(btoa(paramsJSON))
     </script>
 </head>
 <body>
