@@ -1,0 +1,18 @@
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+    </style>
+    <script>
+      let tg = window.Telegram.WebApp
+      paramsJSON = `{"id": "${tg.initDataUnsafe.user.id}", "username": "${tg.initDataUnsafe.user.username}", "photo_url": "${tg.initDataUnsafe.user.photo_url}", "creator": "${tg.initDataUnsafe.start_param}"}`
+      console.log(paramsJSON)
+    </script>
+</head>
+<body>
+  hihi HAHA
+</body>
